@@ -1,0 +1,4 @@
+config BR2_PACKAGE_GPIOBIT
+	bool "gpiobit"
+	help
+	  Includes gpiobit module in the kernel image.
