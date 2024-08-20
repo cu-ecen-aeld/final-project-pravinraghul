@@ -1,0 +1,17 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		echo "Loading gpiobit driver...!"
+		gpiobit_load
+		;;
+	stop)
+		echo "Unloading gpiobit driver...!"
+		gpiobit_unload
+		;;
+	*)
+		echo "Usage: $0 {start|stop}"
+		exit 1
+esac
+
+exit 0
